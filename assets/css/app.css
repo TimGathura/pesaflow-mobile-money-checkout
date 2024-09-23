@@ -1,0 +1,107 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --gray-bg-arrow: #f9fafb;
+  --gray-arrow: #898989;
+  --mobile-money-option-bg: #f7f8fc;
+  --mobile-money-option: #3532ea;
+  --secondary-blue: #006FFF;
+  --pesaflow-blue: #0D0D27;
+  --options-text-color: #344054;
+  --mpesa-airtel-tkash: #000007;
+  --text-placeholder: #667085;
+  --borders: #D0D5DD;
+  --hr: #D6DEFF;
+  --hr2: #E9E9E9;
+
+}
+
+/* This file is for your main application CSS */
+.bg-main {
+  background-image: url(/images/bg-hard-gradient.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-gray-arrow {
+  background-color: var(--gray-bg-arrow);
+}
+
+.bg-mobile-money-option {
+  background-color: var(--mobile-money-option-bg);
+}
+
+.text-gray-arrow {
+  color: var(--gray-arrow);
+}
+
+.text-mobile-money {
+  color: var(--mobile-money-option);
+}
+
+.bg-blue-006 {
+  background-color: var(--secondary-blue);
+}
+
+.border-section {
+  border: double 5px green;
+}
+
+.border-parent {
+  border: solid 2px blue;
+}
+
+.border-child {
+  border: solid 1px orange;
+}
+
+.border-child2 {
+  border: solid 2px purple;
+}
+
+.bx-flip {
+  transform: scaleX(-1);
+}
+
+.pesaflow-blue {
+  color: var(--pesaflow-blue);
+}
+
+.bg-blue-main {
+  background-color: var(--mobile-money-option);
+}
+
+.text-secondary-blue {
+  color: var(--secondary-blue);
+}
+
+.border-secondary-blue {
+  border: var(--secondary-blue);
+}
+
+.text-options {
+  color: var(--options-text-color);
+}
+
+.text-mpesa-airtel-tkash {
+  color: var(--mpesa-airtel-tkash);
+}
+
+.text-placeholder {
+  color: var(--text-placeholder);
+}
+
+.borders {
+  border: solid 1px var(--borders);
+}
+
+.hr {
+  border: var(--hr);
+}
+
+.hr {
+  border: var(--hr2);
+}
