@@ -61,158 +61,26 @@
 
       <div
         id="left-mobile-cont"
-        class="xs:flex xs:flex-col md:flex md:flex-row xl:flex xl:flex-row xs:mt-0 xl:mt-4 xs:h-fit xl:h-full xs:w-full"
+        class="xs:flex xs:flex-col gap-12 items-center xs:mt-0 xl:mt-4 xs:h-fit xl:h-full xs:w-full xs:border-t-0 md:border-t border-[#D6DEFF]"
       >
-        <div
-          id="mobile-money-options-cont"
-          class="sm:px-4 md:pr-4 md:pl-0 xl:px-0 md:border-t md:border-r border-[#D6DEFF] xs:h-fit md:h-[90%] flex flex-col items-start xs:justify-normal xl:justify-between xs:gap-0 xl:gap-4 xs:w-full md:w-[27%]"
-        >
-          <h1
-            class="xs:flex xl:hidden text-options font-semibold xs:text-sm sm:text-[16px] xs:mt-4 md:mt-7"
-          >
-            Select Payment Method
-          </h1>
-          <ul
-            id="options"
-            class="flex flex-col xl:mt-6 font-medium text-options xs:text-sm sm:text-[16px] xs:w-full xl:w-fit xs:py-4 xl:py-0 xs:gap-4 xl:gap-5"
-          >
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:w-full xl:w-fit xl:text-mobile-money xs:bg-[#EBF3FF] xl:bg-mobile-money-option xs:border xs:border-[#006FFF] xs:rounded-md xl:rounded-full xl:border-none xs:hover:cursor-pointer hover:bg-[#cedcf0]"
-            >
-              Mobile Money
-            </li>
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50"
-            >
-              eCitizen wallet
-            </li>
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50"
-            >
-              Card
-            </li>
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50"
-            >
-              Banks
-            </li>
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50"
-            >
-              More...
-            </li>
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50"
-            >
-              Buy now pay later
-            </li>
-          </ul>
+        <h1 class="text-[#5E5E5E] font-semibold text-[32px] mt-16 self-center">
+          Transaction successful
+        </h1>
 
-          <div
-            class="xs:flex xs:flex-col md:hidden items-center justify-between w-full mt-32"
-          >
-            <button
-              class="xs:py-2 sm:py-4 w-full border-none bg-blue-006 rounded-lg"
-            >
-              <p class="text-white font-semibold sm:text-[16px]">Next</p>
-            </button>
-          </div>
-        </div>
+        <!-- Tick icon-->
+        <img src={~p"/images/Tick_v3_005.png"} alt="tick icon" class="w-48">
 
         <div
-          id="dynamic-left-cont"
-          class="xs:hidden md:flex md:flex-col md:flex-grow xs:border-t-0 md:border-t border-[#D6DEFF] px-6 font-medium"
-        >
-          <h1 class="mt-7 font-semibold text-black text-[16px]">
-            Mobile Money
-          </h1>
-
-          <div
-            id="mpesa-airtel-tkash-cont"
-            class="md:max-w-[600px] xl:w-[90%] flex items-center md:justify-between xl:justify-between md:gap-4 mt-6 text-mpesa-airtel-tkash"
-          >
-            <button
-              id="mpesa"
-              class="w-36 h-11 flex flex-grow items-center gap-2 border-[0.5px] border-[#006FFF] bg-[#EBF3FF] px-2 rounded-lg text-[13px] font-medium hover:bg-[#cedcf0]"
-            >
-              <img
-                src="images/mpesa.png"
-                alt="mpesa logo"
-                class="w-[30px] rounded-full"
-              />
-              <p>MPesa</p>
-            </button>
-            <button
-              id="airtel"
-              class="w-36 h-11 gap-2 flex flex-grow items-center border-[0.5px] border-[#F6F6F6] rounded-lg pl-[10px] py-1 text-[13px] font-medium hover:bg-gray-100 hover:border-gray-300"
-            >
-              <img
-                src="images/airtel.png"
-                alt="mpesa logo"
-                class="w-[30px] rounded-full"
-              />
-              <p>Airtel Money</p>
-            </button>
-            <button
-              id="airtel"
-              class="w-36 h-11 gap-2 flex flex-grow items-center border-[0.5px] border-[#F6F6F6] rounded-lg pl-[7px] py-1 text-[13px] font-medium hover:bg-gray-100 hover:border-gray-300"
-            >
-              <img
-                src="images/tkash.png"
-                alt="mpesa logo"
-                class="w-[30px] rounded-full"
-              />
-              <p>TKash</p>
-            </button>
-          </div>
-
-          <div
-            id="phone-number-cont"
-            class="flex flex-col font-medium mt-8 md:max-w-[600px] xl:w-[90%] h-fit"
-          >
-            <p class="font-medium text-[15px] text-options">Phone number</p>
-            <div
-              class="md:max-w-[600px] xl:w-full h-11 flex items-center text-[19.5px] text-gray-500 font-normal gap-1 borders rounded-lg shadow-xs pl-3 mt-2"
-            >
-              <div class="flex items-center hover:cursor-pointer">
-                <img
-                  src="images/kenyan_flag.png"
-                  alt="kenyan flag"
-                  class="w-[19px] h-[19px] mr-1 rounded-full"
-                />
-                <p class="text-[18px] text-placeholder">+254</p>
-                <span
-                  class="material-symbols-outlined text-[28px] text-placeholder"
-                >
-                  keyboard_arrow_down
-                </span>
-              </div>
-
-              <input
-                placeholder="700 000 000"
-                class="ml-1 h-6 w-[340px] text-placeholder placeholder:text-[18px]"
-              />
-            </div>
-          </div>
-
-          <div
-            id="cancel-pay"
-            class="flex justify-between items-center font-semibold mt-16 md:max-w-[600px] xl:w-[90%] h-fit"
+            id="return-btn"
+            class="flex items-center font-medium xs:max-w-[300px] xs:w-full h-fit"
           >
             <button
               id="cancel"
-              class="borders shadow-xs rounded-lg w-[48%] h-10 py-2 text-options hover:bg-gray-100 hover:border-gray-300"
+              class="text-white bg-blue-main rounded-lg w-full h-10 py-2 hover:bg-gray-200 hover:border hover:border-gray-300 hover:text-[#3532ea] hover:cursor-pointer"
             >
-              Cancel
-            </button>
-            <button
-              id="cancel"
-              class="text-white bg-blue-main rounded-lg w-[48%] h-10 py-2 hover:bg-gray-200 hover:border hover:border-gray-300 hover:text-[#3532ea] hover:cursor-pointer"
-            >
-              Pay
+              Return
             </button>
           </div>
-        </div>
       </div>
 
       <div
@@ -308,7 +176,7 @@
         >
           <div
             id="blue-progress-bar"
-            class="w-[20%] bg-blue-main rounded-full h-full"
+            class="w-full bg-blue-main rounded-full h-full"
           ></div>
         </div>
       </div>
@@ -357,9 +225,9 @@
         >
           <p>Status</p>
           <div
-            class="flex items-center self-center justify-center w-[71px] h-[25px] text-[#363F72] bg-blue-50 rounded-full"
+            class="flex items-center self-center justify-center w-fit p-2 h-6 text-[#027A48] bg-[#ECFDF3] rounded-full"
           >
-            <p class="text-[13px]">Not paid</p>
+            <p class="text-[13px]">Paid</p>
           </div>
         </div>
         <div
@@ -506,7 +374,7 @@
           >
             <div
               id="blue-progress-bar"
-              class="w-[10%] bg-blue-main rounded-full h-full"
+              class="w-full bg-[#3532EA] rounded-full h-full"
             ></div>
           </div>
         </div>

@@ -17,7 +17,11 @@ defmodule MobileMoneyCheckoutWeb.Router do
   scope "/", MobileMoneyCheckoutWeb do
     pipe_through :browser
 
-    live "/", Checkoutlive
+    live "/", CheckoutLive
+    live "/2", CheckoutLive2
+    live "/3", CheckoutLive3
+    live "/4", CheckoutLive4
+    live "/5", CheckoutLive5
   end
 
   # Other scopes may use custom stacks.

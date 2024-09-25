@@ -22,6 +22,21 @@
     </script>
 
     <title>NTSA</title>
+    <style>
+      @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+      }
+      .spinner {
+          width: 100px;
+          height: 100px;
+      }
+      .spinner-path {
+          stroke-linecap: round;
+          transform-origin: center;
+          animation: spin 1.5s linear infinite;
+      }
+  </style>
   </head>
   <body class="bg-white">
     <%= @inner_content %>
