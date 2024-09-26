@@ -23,11 +23,13 @@
         <div
           class="w-[26px] h-[26px] mr-7 justify-center items-center self-center border border-white rounded-full"
         >
+          <.link navigate={~p"/3"} class="text-gray-arrow bg-gray-arrow rounded-full font-normal">
           <span
-            class="material-symbols-outlined text-gray-arrow bg-gray-arrow rounded-full font-normal"
+            class="material-symbols-outlined"
           >
             arrow_back
           </span>
+          </.link>
         </div>
 
         <img
@@ -65,7 +67,7 @@
       >
         <div
           id="mobile-money-options-cont"
-          class="sm:px-4 md:pr-4 md:pl-0 xl:pr-4 md:border-t md:border-r border-[#D6DEFF] xs:h-fit md:h-[90%] flex flex-col items-start xs:justify-normal xl:justify-between xs:gap-0 xl:gap-4 xs:w-full md:w-[27%] 2"
+          class="xs:hidden md:flex sm:px-4 md:pr-4 md:pl-0 xl:pr-4 md:border-t md:border-r border-[#D6DEFF] xs:h-fit md:h-[90%] flex flex-col items-start xs:justify-normal xl:justify-between xs:gap-0 xl:gap-4 xs:w-full md:w-[27%] 2"
         >
           <h1
             class="xs:flex xl:hidden text-options font-semibold xs:text-sm sm:text-[16px] xs:mt-4 md:mt-7"
@@ -121,7 +123,7 @@
 
         <div
           id="dynamic-left-cont"
-          class="xs:hidden md:flex md:flex-col md:w-[73%] xs:border-t-0 md:border-t border-[#D6DEFF] pl-6 font-medium gap-8"
+          class="xs:flex xs:flex-col xs:w-full border-child md:flex md:flex-col md:w-[73%] xs:border-t md:border-t border-[#D6DEFF] md:pl-6 font-medium gap-8"
         >
           <div class="flex items-center pt-7 gap-3">
             <h1 class="font-medium text-[#475467] text-[16px]">Mobile Money</h1>
@@ -145,7 +147,7 @@
             <h1 class="font-medium text-[#0054A6] text-[16px]">Mpesa</h1>
           </div>
 
-          <h1 class="font-semibold text-[32px] text-[#5E5E5E] self-center mt-14">Confirming Payment</h1>
+          <h1 class="font-semibold text-[32px] text-[#5E5E5E] self-center mt-14 border-child">Confirming Payment</h1>
 
           <!-- Loading icon -->
           <div
@@ -468,13 +470,13 @@
         <div
           class="relative flex xs:p-4 md:px-8 w-full xs:justify-center md:justify-normal xs:items-center md:items-start"
         >
-          <div class="flex items-center">
-            <span
-              class="material-symbols-outlined text-gray-arrow xs:text-[15px] sm:text-xl bg-gray-arrow border border-[#D0D5DD] xs:p-[2px] sm:px-[6px] rounded-full font-normal absolute xs:left-4 sm:left-8 top-4 xs:flex md:hidden z-50 xs:hover:cursor-pointer xs:hover:bg-gray-200"
-            >
-              close
-            </span>
-          </div>
+        <.link navigate={~p"/3"} class="flex items-center">
+          <span
+            class="material-symbols-outlined text-gray-arrow xs:text-[15px] sm:text-xl bg-gray-arrow border border-[#D0D5DD] xs:p-[2px] sm:px-[6px] rounded-full font-normal absolute xs:left-4 sm:left-8 top-4 xs:flex md:hidden z-50 xs:hover:cursor-pointer xs:hover:bg-gray-200"
+          >
+            close
+          </span>
+        </.link>
 
           <p class="xs:text-[16px] sm:text-[18px] xl:text-[16px]">Checkout</p>
         </div>
@@ -486,7 +488,7 @@
           >
             <div
               id="blue-progress-bar"
-              class="w-[60%] bg-[#3532ea] rounded-full h-full"
+              class="w-[80%] bg-[#3532ea] rounded-full h-full"
             ></div>
           </div>
         </div>

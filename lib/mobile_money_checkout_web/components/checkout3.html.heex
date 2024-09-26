@@ -23,11 +23,13 @@
         <div
           class="w-[26px] h-[26px] mr-7 justify-center items-center self-center border border-white rounded-full"
         >
+          <.link navigate={~p"/2"} class="text-gray-arrow bg-gray-arrow rounded-full font-normal">
           <span
-            class="material-symbols-outlined text-gray-arrow bg-gray-arrow rounded-full font-normal"
+            class="material-symbols-outlined"
           >
             arrow_back
           </span>
+          </.link>
         </div>
 
         <img
@@ -61,11 +63,11 @@
 
       <div
         id="left-mobile-cont"
-        class="xs:flex xs:flex-col md:flex md:flex-row xl:flex xl:flex-row xs:mt-0 xl:mt-4 xs:h-fit xl:h-full xs:w-full"
+        class="xs:flex xs:flex-col xs:justify-center md:flex md:flex-row xl:flex xl:flex-row xs:mt-0 xl:mt-4 xs:h-fit xl:h-full xs:w-full border-parent"
       >
         <div
           id="mobile-money-options-cont"
-          class="sm:px-4 md:pr-4 md:pl-0 xl:pr-4 md:border-t md:border-r border-[#D6DEFF] xs:h-fit md:h-[90%] flex flex-col items-start xs:justify-normal xl:justify-between xs:gap-0 xl:gap-4 xs:w-full md:w-[27%] 2"
+          class="xs:hidden md:flex sm:px-4 md:pr-4 md:pl-0 xl:pr-4 md:border-t md:border-r border-[#D6DEFF] xs:h-fit md:h-[90%] flex flex-col items-start xs:justify-normal xl:justify-between xs:gap-0 xl:gap-4 xs:w-full md:w-[27%] 2"
         >
           <h1
             class="xs:flex xl:hidden text-options font-semibold xs:text-sm sm:text-[16px] xs:mt-4 md:mt-7"
@@ -121,7 +123,7 @@
 
         <div
           id="dynamic-left-cont"
-          class="xs:hidden md:flex md:flex-col md:w-[73%] xs:border-t-0 md:border-t border-[#D6DEFF] pl-6 font-medium gap-8"
+          class="xs:flex xs:flex-col  xs:w-full border-child md:flex md:flex-col md:w-[73%] xs:border-t-0 md:border-t border-[#D6DEFF] md:pl-6 font-medium gap-8"
         >
           <div class="flex items-center pt-7 gap-3">
             <h1 class="font-medium text-[#475467] text-[16px]">Mobile Money</h1>
@@ -197,22 +199,44 @@
               </button>
             </div>
           </div>
+
           <div
             id="cancel-pay"
-            class="flex justify-between items-center font-medium md:max-w-[600px] xl:w-full h-fit"
+            class="xs:hidden md:flex justify-between gap-4 items-center font-medium md: xs:w-full h-fit border-child"
           >
+            <.link navigate={~p"/2"} class="borders shadow-xs rounded-lg w-[48%] md:h-14 xl:h-10 py-2 text-options hover:bg-gray-100 hover:border-gray-300">
             <button
-              id="cancel"
-              class="borders shadow-xs rounded-lg w-[48%] h-10 py-2 text-options hover:bg-gray-100 hover:border-gray-300"
+              id="cancel" class="w-full"
             >
               Cancel
             </button>
+          </.link>
+
+            <.link navigate={~p"/4"} class="text-white bg-blue-main rounded-lg w-[48%] md:h-14 xl:h-10 py-2 hover:bg-gray-200 hover:border hover:border-gray-300 hover:text-[#3532ea] hover:cursor-pointer">
             <button
-              id="cancel"
-              class="text-white bg-blue-main rounded-lg w-[48%] h-10 py-2 hover:bg-gray-200 hover:border hover:border-gray-300 hover:text-[#3532ea] hover:cursor-pointer"
+              id="confirm-payment-btn" class="w-full"
+              
             >
               Confirm Payment
             </button>
+          </.link>
+          </div>
+
+          <div
+            class="xs:flex xs:flex-col gap-4 md:hidden items-center justify-between w-full mt-32"
+          >
+            <.link navigate={~p"/4"} class="xs:py-2 sm:py-4 w-full border-none bg-blue-006 rounded-lg">
+              <button 
+                class="w-full"
+              >
+                <p class="text-white font-semibold sm:text-[16px]">Next</p>
+              </button>
+            </.link>
+            <.link navigate={~p"/2"} class="xs:py-2 sm:py-4 w-full border-none rounded-lg">
+            <button class="w-full">
+              <p class="text-[#344054] font-semibold sm:text-[16px]">Back</p>
+            </button>
+            </.link>
           </div>
         </div>
       </div>
@@ -490,13 +514,13 @@
         <div
           class="relative flex xs:p-4 md:px-8 w-full xs:justify-center md:justify-normal xs:items-center md:items-start"
         >
-          <div class="flex items-center">
-            <span
-              class="material-symbols-outlined text-gray-arrow xs:text-[15px] sm:text-xl bg-gray-arrow border border-[#D0D5DD] xs:p-[2px] sm:px-[6px] rounded-full font-normal absolute xs:left-4 sm:left-8 top-4 xs:flex md:hidden z-50 xs:hover:cursor-pointer xs:hover:bg-gray-200"
-            >
-              close
-            </span>
-          </div>
+        <.link navigate={~p"/2"} class="flex items-center">
+          <span
+            class="material-symbols-outlined text-gray-arrow xs:text-[15px] sm:text-xl bg-gray-arrow border border-[#D0D5DD] xs:p-[2px] sm:px-[6px] rounded-full font-normal absolute xs:left-4 sm:left-8 top-4 xs:flex md:hidden z-50 xs:hover:cursor-pointer xs:hover:bg-gray-200"
+          >
+            close
+          </span>
+        </.link>
 
           <p class="xs:text-[16px] sm:text-[18px] xl:text-[16px]">Checkout</p>
         </div>

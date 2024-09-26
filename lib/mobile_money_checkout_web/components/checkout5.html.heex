@@ -20,7 +20,7 @@
         id="ntsa-logo-header-cont"
         class="flex items-center xs:hidden xl:flex xl:mt-5 xl:w-fit xl:h-fit"
       >
-        <div
+        <.link navigate={~p"/"}
           class="w-[26px] h-[26px] mr-7 justify-center items-center self-center border border-white rounded-full"
         >
           <span
@@ -28,7 +28,7 @@
           >
             arrow_back
           </span>
-        </div>
+        </.link>
 
         <img
           src="images/coat-of-arms-official-text.png"
@@ -63,7 +63,7 @@
         id="left-mobile-cont"
         class="xs:flex xs:flex-col gap-12 items-center xs:mt-0 xl:mt-4 xs:h-fit xl:h-full xs:w-full xs:border-t-0 md:border-t border-[#D6DEFF]"
       >
-        <h1 class="text-[#5E5E5E] font-semibold text-[32px] mt-16 self-center">
+        <h1 class="text-[#5E5E5E] font-semibold xs:text-2xl border-child sm:text-[32px] mt-16 self-center">
           Transaction successful
         </h1>
 
@@ -74,12 +74,14 @@
             id="return-btn"
             class="flex items-center font-medium xs:max-w-[300px] xs:w-full h-fit"
           >
+          <.link navigate={~p"/"} class="text-white bg-blue-main rounded-lg w-full h-10 py-2 hover:bg-gray-200 hover:border hover:border-gray-300 hover:text-[#3532ea] hover:cursor-pointer">
             <button
-              id="cancel"
-              class="text-white bg-blue-main rounded-lg w-full h-10 py-2 hover:bg-gray-200 hover:border hover:border-gray-300 hover:text-[#3532ea] hover:cursor-pointer"
+              id="cancel" class="w-full"
+              
             >
               Return
             </button>
+          </.link>
           </div>
       </div>
 
