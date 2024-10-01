@@ -19,8 +19,48 @@
 }
 
 /* This file is for your main application CSS */
-.bg-main {
-  background-image: url(/images/bg-hard-gradient.png);
+.active-button {
+  border: solid 0.5px var(--secondary-blue);
+  background-color: #EBF3FF;
+}
+
+.active-button:hover {
+  background-color: #cedcf0;
+}
+
+.active-tab {
+  border: solid 1px var(--secondary-blue);
+  background-color: #EBF3FF;
+}
+
+.active-tab:hover {
+  background-color: #cedcf0;
+  cursor: pointer;
+}
+
+.inactive-button {
+  border: solid 0.5px #F6F6F6;
+  background-color: #FFFFFF;
+}
+
+.inactive-button:hover {
+  background-color: #f3f4f6;
+  border: solid 0.5px #d1d5db;
+}
+
+.inactive-tab {
+  border: solid 0px #F6F6F6;
+  background-color: #F9FAFB;
+}
+
+.inactive-tab:hover {
+  background-color: #e3e8ec;
+  cursor: pointer;
+  color: #3532ea;
+}
+
+.bg-main2 {
+  background-image: url(/priv/static/images/bg_gradient.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

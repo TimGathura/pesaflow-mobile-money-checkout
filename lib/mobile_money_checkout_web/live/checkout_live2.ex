@@ -12,5 +12,4 @@ defmodule MobileMoneyCheckoutWeb.CheckoutLive2 do
     <.checkout2 />
     """
   end
-
 end

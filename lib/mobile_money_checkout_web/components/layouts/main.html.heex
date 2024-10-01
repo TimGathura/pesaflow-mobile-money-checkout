@@ -16,6 +16,9 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <!-- Exact font boma yangu -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <!-- Intl tel input CSS and JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/css/intlTelInput.css">
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/intlTelInput.min.js"></script>
 
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
@@ -26,7 +29,6 @@
       let FF_FOUC_FIX;
     </script>
 
-    <title>NTSA</title>
     <style>
       @keyframes spin {
           0% { transform: rotate(0deg); }
@@ -41,7 +43,7 @@
           transform-origin: center;
           animation: spin 1.5s linear infinite;
       }
-  </style>
+    </style>
   </head>
   <body class="bg-white">
     <%= @inner_content %>

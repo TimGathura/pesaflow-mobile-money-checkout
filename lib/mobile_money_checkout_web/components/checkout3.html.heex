@@ -2,7 +2,6 @@
   id="overall-parent"
   class="roboto-regular flex flex-col items-center xs:px-4 sm:px-8 md:px-8 lg:px-4 xl:px-8 2xl:px-8 3xl:px-32 overflow-x-hidden min-w-[320px]"
 >-->
-
 <section
   id="overall-section"
   class="relative xl:bg-main xs:h-fit xl:h-screen w-full flex justify-center items-center font-normal font-sans z-10 px-0 xs:px-0 3xl:px-64 min-w-[320px] mx-auto"
@@ -20,41 +19,25 @@
         id="ntsa-logo-header-cont"
         class="flex items-center xs:hidden xl:flex xl:mt-5 xl:w-fit xl:h-fit"
       >
-        <div
-          class="w-[26px] h-[26px] mr-7 justify-center items-center self-center border border-white rounded-full"
-        >
-          <.link navigate={~p"/2"} class="text-gray-arrow bg-gray-arrow rounded-full font-normal">
-          <span
-            class="material-symbols-outlined"
-          >
-            arrow_back
-          </span>
+        <div class="w-[26px] h-[26px] mr-7 justify-center items-center self-center border border-white rounded-full">
+          <.link navigate={~p"/"}>
+            <span class="material-symbols-outlined text-gray-arrow bg-gray-arrow rounded-full font-normal">
+              arrow_back
+            </span>
           </.link>
         </div>
 
-        <img
-          src="images/coat-of-arms-official-text.png"
-          alt="coat of arms"
-          class="w-9 h-10 mr-3"
-        />
+        <img src="images/coat-of-arms-official-text.png" alt="coat of arms" class="w-9 h-10 mr-3" />
         <img
           src="images/pesaflow_green_black_red_icon.png"
           alt="green black red icon"
           class="h-10"
         />
-        <img
-          src="images/ntsa_logo_official.png"
-          alt="ntsa logo"
-          class="w-[61px] h-[27px] ml-3"
-        />
+        <img src="images/ntsa_logo_official.png" alt="ntsa logo" class="w-[61px] h-[27px] ml-3" />
       </div>
 
-      <h1
-        class="xs:hidden xl:flex xs:justify-center xl:justify-start gap-2 mt-7 font-semibold text-[18px] pesaflow-blue w-full"
-      >
-        <span
-          class="material-symbols-outlined text-gray-arrow bg-gray-arrow rounded-full font-normal xs:flex xl:hidden"
-        >
+      <h1 class="xs:hidden xl:flex xs:justify-center xl:justify-start gap-2 mt-7 font-semibold text-[18px] pesaflow-blue w-full">
+        <span class="material-symbols-outlined text-gray-arrow bg-gray-arrow rounded-full font-normal xs:flex xl:hidden">
           arrow_back
         </span>
         <p class="xs:self-center">Checkout</p>
@@ -63,59 +46,41 @@
 
       <div
         id="left-mobile-cont"
-        class="xs:flex xs:flex-col xs:justify-center md:flex md:flex-row xl:flex xl:flex-row xs:mt-0 xl:mt-4 xs:h-fit xl:h-full xs:w-full border-parent"
+        class="xs:flex xs:flex-col xs:justify-center md:flex md:flex-row xl:flex xl:flex-row xs:mt-0 xl:mt-4 xs:h-fit xl:h-full xs:w-full "
       >
         <div
           id="mobile-money-options-cont"
           class="xs:hidden md:flex sm:px-4 md:pr-4 md:pl-0 xl:pr-4 md:border-t md:border-r border-[#D6DEFF] xs:h-fit md:h-[90%] flex flex-col items-start xs:justify-normal xl:justify-between xs:gap-0 xl:gap-4 xs:w-full md:w-[27%] 2"
         >
-          <h1
-            class="xs:flex xl:hidden text-options font-semibold xs:text-sm sm:text-[16px] xs:mt-4 md:mt-7"
-          >
+          <h1 class="xs:flex xl:hidden text-options font-semibold xs:text-sm sm:text-[16px] xs:mt-4 md:mt-7">
             Select Payment Method
           </h1>
           <ul
             id="options"
             class="flex flex-col xl:mt-6 font-medium text-options xs:text-sm sm:text-[16px] xs:w-full xl:w-fit xs:py-4 xl:py-0 xs:gap-4 xl:gap-5"
           >
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:w-full xl:w-full xl:text-mobile-money xs:bg-[#EBF3FF] xl:bg-mobile-money-option xs:border xs:border-[#006FFF] xs:rounded-md xl:rounded-full xl:border-none xs:hover:cursor-pointer hover:bg-[#cedcf0]"
-            >
+            <li class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:w-full xl:w-full xl:text-mobile-money xs:bg-[#EBF3FF] xl:bg-mobile-money-option xs:border xs:border-[#006FFF] xs:rounded-md xl:rounded-full xl:border-none xs:hover:cursor-pointer hover:bg-[#cedcf0]">
               Mobile Money
             </li>
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50"
-            >
+            <li class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50">
               eCitizen wallet
             </li>
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50"
-            >
+            <li class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50">
               Card
             </li>
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50"
-            >
+            <li class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50">
               Banks
             </li>
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50"
-            >
+            <li class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50">
               More...
             </li>
-            <li
-              class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50"
-            >
+            <li class="xs:py-3 sm:py-5 xl:py-3 xs:px-4 sm:pl-5 xl:pl-3 xl:pr-12 xs:bg-[#F9FAFB] xl:bg-transparent xs:border-0 xl:border-0 xs:rounded-md xl:rounded-full xs:hover:cursor-pointer hover:text-[#3532ea] hover:bg-gray-50">
               Buy now pay later
             </li>
           </ul>
 
-          <div
-            class="xs:flex xs:flex-col md:hidden items-center justify-between w-full mt-32"
-          >
-            <button
-              class="xs:py-2 sm:py-4 w-full border-none bg-blue-006 rounded-lg"
-            >
+          <div class="xs:flex xs:flex-col md:hidden items-center justify-between w-full mt-32">
+            <button class="xs:py-2 sm:py-4 w-full border-none bg-blue-006 rounded-lg">
               <p class="text-white font-semibold sm:text-[16px]">Next</p>
             </button>
           </div>
@@ -123,7 +88,7 @@
 
         <div
           id="dynamic-left-cont"
-          class="xs:flex xs:flex-col  xs:w-full border-child md:flex md:flex-col md:w-[73%] xs:border-t-0 md:border-t border-[#D6DEFF] md:pl-6 font-medium gap-8"
+          class="xs:flex xs:flex-col  xs:w-full  md:flex md:flex-col md:w-[73%] xs:border-t-0 md:border-t border-[#D6DEFF] md:pl-6 font-medium gap-8"
         >
           <div class="flex items-center pt-7 gap-3">
             <h1 class="font-medium text-[#475467] text-[16px]">Mobile Money</h1>
@@ -146,7 +111,6 @@
             <!-- mpesa -->
             <h1 class="font-medium text-[#0054A6] text-[16px]">Mpesa</h1>
           </div>
-
           <!-- Notification sent to phone -->
           <div
             id="notification-cont"
@@ -173,22 +137,17 @@
               <p class="text-[#344054] text-[16px] font-semibold">
                 Manual Payment
               </p>
-              <div
-                class="gap-1 flex flex-col items-start text-[#344054] text-[16px] font-normal"
-              >
+              <div class="gap-1 flex flex-col items-start text-[#344054] text-[16px] font-normal">
                 <p>1. Go to M-PESA on your phone</p>
                 <p>2. Select Pay Bill option</p>
                 <p>
-                  3. Enter Business no.
-                  <span class="font-bold text-sm">222222</span>
+                  3. Enter Business no. <span class="font-bold text-sm">222222</span>
                 </p>
                 <p>
-                  4. Enter Account no.
-                  <span class="font-bold text-sm">YAFEOGL</span>
+                  4. Enter Account no. <span class="font-bold text-sm">YAFEOGL</span>
                 </p>
                 <p>
-                  5. Enter the Amount. 
-                  <span class="font-bold text-sm">KES 3,050</span>
+                  5. Enter the Amount. <span class="font-bold text-sm">KES 3,050</span>
                 </p>
                 <p>6. Enter your M-PESA PIN and Send</p>
                 <p>7. You will receive a confirmation SMS from MPESA</p>
@@ -202,40 +161,40 @@
 
           <div
             id="cancel-pay"
-            class="xs:hidden md:flex justify-between gap-4 items-center font-medium md: xs:w-full h-fit border-child"
+            class="xs:hidden md:flex justify-between gap-4 items-center font-medium md: xs:w-full h-fit "
           >
-            <.link navigate={~p"/2"} class="borders shadow-xs rounded-lg w-[48%] md:h-14 xl:h-10 py-2 text-options hover:bg-gray-100 hover:border-gray-300">
-            <button
-              id="cancel" class="w-full"
+            <.link
+              navigate={~p"/"}
+              class="borders shadow-xs rounded-lg w-[48%] xl:h-10 py-2 text-options hover:bg-gray-100 hover:border-gray-300"
             >
-              Cancel
-            </button>
-          </.link>
+              <button id="cancel" class="w-full">
+                Cancel
+              </button>
+            </.link>
 
-            <.link navigate={~p"/4"} class="text-white bg-blue-main rounded-lg w-[48%] md:h-14 xl:h-10 py-2 hover:bg-gray-200 hover:border hover:border-gray-300 hover:text-[#3532ea] hover:cursor-pointer">
-            <button
-              id="confirm-payment-btn" class="w-full"
-              
+            <.link
+              navigate={~p"/4"}
+              class="text-white bg-blue-main rounded-lg w-[48%] xl:h-10 py-2 hover:bg-gray-200 hover:border hover:border-gray-300 hover:text-[#3532ea] hover:cursor-pointer"
             >
-              Confirm Payment
-            </button>
-          </.link>
+              <button id="confirm-payment-btn" class="w-full">
+                Confirm Payment
+              </button>
+            </.link>
           </div>
 
-          <div
-            class="xs:flex xs:flex-col gap-4 md:hidden items-center justify-between w-full mt-32"
-          >
-            <.link navigate={~p"/4"} class="xs:py-2 sm:py-4 w-full border-none bg-blue-006 rounded-lg">
-              <button 
-                class="w-full"
-              >
+          <div class="xs:flex xs:flex-col gap-4 md:hidden items-center justify-between w-full mt-32">
+            <.link
+              navigate={~p"/4"}
+              class="xs:py-2 sm:py-4 w-full border-none bg-blue-006 rounded-lg"
+            >
+              <button class="w-full">
                 <p class="text-white font-semibold sm:text-[16px]">Next</p>
               </button>
             </.link>
             <.link navigate={~p"/2"} class="xs:py-2 sm:py-4 w-full border-none rounded-lg">
-            <button class="w-full">
-              <p class="text-[#344054] font-semibold sm:text-[16px]">Back</p>
-            </button>
+              <button class="w-full">
+                <p class="text-[#344054] font-semibold sm:text-[16px]">Back</p>
+              </button>
             </.link>
           </div>
         </div>
@@ -247,17 +206,11 @@
       >
         <div class="flex items-center xs:w-full md:w-fit justify-center">
           <div class="flex h-full xs:items-center">
-            <img
-              src="images/pesaflow-logo.png"
-              alt="pesaflow logo"
-              class="w-6 h-3"
-            />
+            <img src="images/pesaflow-logo.png" alt="pesaflow logo" class="w-6 h-3" />
             <p class="ml-2 xs:text-[17px] sm:text-xl font-medium">Pesaflow</p>
           </div>
         </div>
-        <div
-          class="xs:flex xs:flex-col sm:flex sm:flex-row xs:gap-1 sm:gap-8 xs:justify-between sm:justify-center items-center xs:w-full md:w-fit"
-        >
+        <div class="xs:flex xs:flex-col sm:flex sm:flex-row xs:gap-1 sm:gap-8 xs:justify-between sm:justify-center items-center xs:w-full md:w-fit">
           <div class="flex gap-2 xs:items-center">
             <span class="material-symbols-outlined xs:text-[22px] sm:text-2xl">
               mail
@@ -280,18 +233,10 @@
         id="footer-logos-mobile-exclusive"
         class="xs:flex xl:hidden w-full h-fit mt-4 xs:mb-8 md:mb-4 xs:justify-center md:justify-start items-center gap-2"
       >
-        <img
-          src="images/pci_dss_compliant.png"
-          alt="pci dss compliant logo"
-          class="h-6"
-        />
+        <img src="images/pci_dss_compliant.png" alt="pci dss compliant logo" class="h-6" />
         <img src="images/mastercard.png" alt="mastercard logo" class="h-6" />
         <img src="images/visa.png" alt="visa logo" class="h-10" />
-        <img
-          src="images/iso27001_official.png"
-          alt="iso27001 logo"
-          class="h-6"
-        />
+        <img src="images/iso27001_official.png" alt="iso27001 logo" class="h-6" />
       </div>
 
       <div
@@ -299,11 +244,7 @@
         class="xs:hidden xl:flex items-center h-6 w-full -mx-1 mb-8 px-1 text-black"
       >
         <div class="flex h-full items-center">
-          <img
-            src="images/pesaflow-logo.png"
-            alt="pesaflow logo"
-            class="w-6 h-3"
-          />
+          <img src="images/pesaflow-logo.png" alt="pesaflow logo" class="w-6 h-3" />
           <p class="ml-2 text-[17px] font-medium">Pesaflow</p>
         </div>
 
@@ -323,19 +264,10 @@
       id="right-section"
       class="xs:h-fit xl:h-full xs:w-full xl:w-[42%] flex flex-col xs:px-4 sm:px-8 xl:px-14 xs:bg-transparent xl:bg-[#f7f8fc] xs:my-4 xl:my-0"
     >
-      <div
-        id="progress-bar-cont"
-        class="xs:hidden xl:flex items-center mt-14 gap-3 w-full"
-      >
+      <div id="progress-bar-cont" class="xs:hidden xl:flex items-center mt-14 gap-3 w-full">
         <p class="font-medium text-black text-xs tracking-widest">PROGRESS</p>
-        <div
-          id="progress-bar"
-          class="flex items-center w-[80%] rounded-full h-[10px] bg-white"
-        >
-          <div
-            id="blue-progress-bar"
-            class="w-[60%] bg-blue-main rounded-full h-full"
-          ></div>
+        <div id="progress-bar" class="flex items-center w-[80%] rounded-full h-[10px] bg-white">
+          <div id="blue-progress-bar" class="w-[60%] bg-blue-main rounded-full h-full"></div>
         </div>
       </div>
 
@@ -350,9 +282,7 @@
           <h1 class="xs:text-sm sm:text-[18px] text-[#667085] font-normal">
             Driving License Renewal
           </h1>
-          <span
-            class="material-symbols-outlined xs:text-xl sm:text-3xl text-options hover:cursor-pointer"
-          >
+          <span class="material-symbols-outlined xs:text-xl sm:text-3xl text-options hover:cursor-pointer">
             keyboard_arrow_down
           </span>
         </div>
@@ -382,9 +312,7 @@
           class="mt-4 flex justify-between items-center font-normal text-black"
         >
           <p>Status</p>
-          <div
-            class="flex items-center self-center justify-center w-[71px] h-[25px] text-[#363F72] bg-blue-50 rounded-full"
-          >
+          <div class="flex items-center self-center justify-center w-[71px] h-[25px] text-[#363F72] bg-blue-50 rounded-full">
             <p class="text-[13px]">Not paid</p>
           </div>
         </div>
@@ -413,7 +341,8 @@
         <div
           id="hr-dotted"
           class="mt-5 flex border-t border-dashed gap-x-8 w-full border-gray-400"
-        ></div>
+        >
+        </div>
         <div
           id="payment-ref"
           class="mt-3 flex justify-between items-center text-[15px] text-black font-semibold"
@@ -421,15 +350,10 @@
           <p>Total Payable</p>
           <p class="text-[26px] text-mobile-money">KES 3,050.00</p>
         </div>
-        <div
-          id="currency-kes"
-          class="mt-8 flex items-center text-[15px] font-medium"
-        >
+        <div id="currency-kes" class="mt-8 flex items-center text-[15px] font-medium">
           <p class="text-options">Currency</p>
           <p class="ml-8 text-secondary-blue hover:cursor-pointer">KES</p>
-          <span
-            class="material-symbols-outlined text-[27px] text-secondary-blue text-secondary-blue hover:cursor-pointer"
-          >
+          <span class="material-symbols-outlined text-[27px] text-secondary-blue text-secondary-blue hover:cursor-pointer">
             keyboard_arrow_down
           </span>
         </div>
@@ -437,17 +361,32 @@
           id="share-icons"
           class="mt-16 flex justify-start gap-7 items-center text-black w-full"
         >
-          <span
-            class="material-symbols-outlined hover:cursor-pointer hover:text-gray-700"
-          >
-            share
-          </span>
-          <i
-            class="bx bx-cloud-download text-2xl hover:cursor-pointer hover:text-gray-700"
-          ></i>
-          <i
-            class="bx bx-copy bx-flip text-2xl hover:cursor-pointer hover:text-gray-700"
-          ></i>
+          <!--Share svg(figma) -->
+          <svg width="18" height="20" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer">
+            <g clip-path="url(#clip0_1283_5769)">
+            <path d="M6.08458 10.5362L10.9225 13.3554M10.9154 5.57788L6.08458 8.39705M14.875 4.5083C14.875 5.68191 13.9236 6.6333 12.75 6.6333C11.5764 6.6333 10.625 5.68191 10.625 4.5083C10.625 3.3347 11.5764 2.3833 12.75 2.3833C13.9236 2.3833 14.875 3.3347 14.875 4.5083ZM6.375 9.46663C6.375 10.6402 5.4236 11.5916 4.25 11.5916C3.07639 11.5916 2.125 10.6402 2.125 9.46663C2.125 8.29303 3.07639 7.34163 4.25 7.34163C5.4236 7.34163 6.375 8.29303 6.375 9.46663ZM14.875 14.425C14.875 15.5986 13.9236 16.55 12.75 16.55C11.5764 16.55 10.625 15.5986 10.625 14.425C10.625 13.2514 11.5764 12.3 12.75 12.3C13.9236 12.3 14.875 13.2514 14.875 14.425Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1283_5769">
+            <rect width="17" height="17" fill="white" transform="translate(0 0.966797)"/>
+            </clipPath>
+            </defs>
+          </svg>
+          <!-- Cloud download svg(figma) -->
+          <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer">
+            <path d="M5.66663 13.0085L8.49996 15.8418M8.49996 15.8418L11.3333 13.0085M8.49996 15.8418V9.4668M14.1666 12.8263C15.0319 12.1117 15.5833 11.0308 15.5833 9.82096C15.5833 7.66935 13.8391 5.92513 11.6875 5.92513C11.5327 5.92513 11.3879 5.84438 11.3093 5.71103C10.3856 4.14356 8.68018 3.0918 6.72913 3.0918C3.79511 3.0918 1.41663 5.47028 1.41663 8.4043C1.41663 9.86779 2.0084 11.1931 2.96571 12.1539" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <!-- Copy svg(figma) -->
+          <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer">
+            <g clip-path="url(#clip0_1283_5775)">
+            <path d="M5.66663 12.3V14.2833C5.66663 15.0767 5.66663 15.4734 5.82103 15.7765C5.95685 16.043 6.17358 16.2597 6.44014 16.3956C6.74318 16.55 7.13988 16.55 7.93329 16.55H13.3166C14.11 16.55 14.5067 16.55 14.8098 16.3956C15.0763 16.2597 15.2931 16.043 15.4289 15.7765C15.5833 15.4734 15.5833 15.0767 15.5833 14.2833V8.89997C15.5833 8.10656 15.5833 7.70986 15.4289 7.40681C15.2931 7.14025 15.0763 6.92353 14.8098 6.78771C14.5067 6.6333 14.11 6.6333 13.3166 6.6333H11.3333M3.68329 12.3H9.06663C9.86003 12.3 10.2567 12.3 10.5598 12.1456C10.8263 12.0097 11.0431 11.793 11.1789 11.5265C11.3333 11.2234 11.3333 10.8267 11.3333 10.0333V4.64997C11.3333 3.85656 11.3333 3.45986 11.1789 3.15681C11.0431 2.89025 10.8263 2.67353 10.5598 2.53771C10.2567 2.3833 9.86003 2.3833 9.06663 2.3833H3.68329C2.88988 2.3833 2.49318 2.3833 2.19014 2.53771C1.92358 2.67353 1.70685 2.89025 1.57103 3.15681C1.41663 3.45986 1.41663 3.85656 1.41663 4.64997V10.0333C1.41663 10.8267 1.41663 11.2234 1.57103 11.5265C1.70685 11.793 1.92358 12.0097 2.19014 12.1456C2.49318 12.3 2.88988 12.3 3.68329 12.3Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1283_5775">
+            <rect width="17" height="17" fill="white" transform="translate(0 0.966797)"/>
+            </clipPath>
+            </defs>
+          </svg>
         </div>
       </div>
 
@@ -455,22 +394,10 @@
         id="footer-icons"
         class="xs:hidden xl:flex justify-end gap-3 self-end mb-5 items-center w-full"
       >
-        <img
-          src="images/pci_dss_compliant.png"
-          alt="pci dss compliant logo"
-          class="w-[50px]"
-        />
-        <img
-          src="images/mastercard.png"
-          alt="mastercard logo"
-          class="w-[36px]"
-        />
+        <img src="images/pci_dss_compliant.png" alt="pci dss compliant logo" class="w-[50px]" />
+        <img src="images/mastercard.png" alt="mastercard logo" class="w-[36px]" />
         <img src="images/visa.png" alt="visa logo" class="w-[42px]" />
-        <img
-          src="images/iso27001_official.png"
-          alt="iso27001 logo"
-          class="w-[30px]"
-        />
+        <img src="images/iso27001_official.png" alt="iso27001 logo" class="w-[30px]" />
       </div>
     </section>
 
@@ -482,45 +409,29 @@
         id="ntsa-logo-header-cont2"
         class="flex items-center xs:hidden md:flex md:mt-5 md:px-8 md:w-fit md:h-fit"
       >
-        <div
-          class="w-[26px] h-[26px] mr-7 justify-center items-center self-center border border-white rounded-full"
-        >
-          <span
-            class="material-symbols-outlined text-gray-arrow bg-gray-arrow rounded-full font-normal"
-          >
+        <div class="w-[26px] h-[26px] mr-7 justify-center items-center self-center border border-white rounded-full">
+          <.link navigate={~p"/"}>
+          <span class="material-symbols-outlined text-gray-arrow bg-gray-arrow rounded-full font-normal">
             arrow_back
           </span>
+          </.link>
         </div>
 
-        <img
-          src="images/coat-of-arms-official-text.png"
-          alt="coat of arms"
-          class="w-9 h-10 mr-3"
-        />
+        <img src="images/coat-of-arms-official-text.png" alt="coat of arms" class="w-9 h-10 mr-3" />
         <img
           src="images/pesaflow_green_black_red_icon.png"
           alt="green black red icon"
           class="h-10"
         />
-        <img
-          src="images/ntsa_logo_official.png"
-          alt="ntsa logo"
-          class="w-[61px] h-[27px] ml-3"
-        />
+        <img src="images/ntsa_logo_official.png" alt="ntsa logo" class="w-[61px] h-[27px] ml-3" />
       </div>
-      <div
-        class="relative flex flex-col xs:mt-7 md:mt-2 font-semibold text-[18px] pesaflow-blue w-full"
-      >
-        <div
-          class="relative flex xs:p-4 md:px-8 w-full xs:justify-center md:justify-normal xs:items-center md:items-start"
-        >
-        <.link navigate={~p"/2"} class="flex items-center">
-          <span
-            class="material-symbols-outlined text-gray-arrow xs:text-[15px] sm:text-xl bg-gray-arrow border border-[#D0D5DD] xs:p-[2px] sm:px-[6px] rounded-full font-normal absolute xs:left-4 sm:left-8 top-4 xs:flex md:hidden z-50 xs:hover:cursor-pointer xs:hover:bg-gray-200"
-          >
-            close
-          </span>
-        </.link>
+      <div class="relative flex flex-col xs:mt-7 md:mt-2 font-semibold text-[18px] pesaflow-blue w-full">
+        <div class="relative flex xs:p-4 md:px-8 w-full xs:justify-center md:justify-normal xs:items-center md:items-start">
+          <.link navigate={~p"/2"} class="flex items-center">
+            <span class="material-symbols-outlined text-gray-arrow xs:text-[15px] sm:text-xl bg-gray-arrow border border-[#D0D5DD] xs:p-[2px] sm:px-[6px] rounded-full font-normal absolute xs:left-4 sm:left-8 top-4 xs:flex md:hidden z-50 xs:hover:cursor-pointer xs:hover:bg-gray-200">
+              close
+            </span>
+          </.link>
 
           <p class="xs:text-[16px] sm:text-[18px] xl:text-[16px]">Checkout</p>
         </div>
@@ -530,10 +441,7 @@
             id="progress-bar"
             class="flex items-center xs:w-full md:w-full md:max-w-[800px] xl:w-[353px] rounded-full h-[10px] bg-[#F3F3F3]"
           >
-            <div
-              id="blue-progress-bar"
-              class="w-[60%] bg-[#3532ea] rounded-full h-full"
-            ></div>
+            <div id="blue-progress-bar" class="w-[60%] bg-[#3532ea] rounded-full h-full"></div>
           </div>
         </div>
       </div>
